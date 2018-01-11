@@ -46,12 +46,9 @@ coverage.xml
 *.cover
 .hypothesis/
 
-# Translations
-*.mo
-*.pot
-
 # Django stuff:
 *.log
+
 # Django conf:
 settings/secret.py
 
