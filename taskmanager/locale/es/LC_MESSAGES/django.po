@@ -1,0 +1,64 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-01-11 14:53-0500\n"
+"PO-Revision-Date: 2018-01-11 15:00-0500\n"
+"Last-Translator: Jorge Andres Bravo Meza <jm1218@hotmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: .\taskmanager\settings\base.py:110
+msgid "Spanish"
+msgstr "Español"
+
+#: .\taskmanager\settings\base.py:111
+msgid "English"
+msgstr "Inglés"
+
+#: .\taskmanager\templates\navbar.html:15
+msgid "Home"
+msgstr "Inicio"
+
+#: .\taskmanager\templates\navbar.html:21
+msgid "Task"
+msgstr "Tareas"
+
+#: .\taskmanager\templates\navbar.html:34
+msgid "Search"
+msgstr "Buscar"
+
+#: .\taskmanager\templates\navbar.html:41
+msgid "User"
+msgstr "Usuario"
+
+#: .\taskmanager\templates\navbar.html:44
+msgid "Configuration"
+msgstr "Configuración"
+
+#: .\taskmanager\templates\navbar.html:45
+msgid "Help"
+msgstr "Ayuda"
+
+#: .\taskmanager\templates\navbar.html:47
+msgid "Log Out"
+msgstr "Cerrar sesión"
+
+#: .\taskmanager\templates\taskmanager\index.html:12
+msgid "Welcome to TaskManager"
+msgstr "Bienvenido a TaskManager"
+
+#: .\taskmanager\templates\taskmanager\index.html:14
+msgid ""
+"TaskManager is a simple web app that helps you organize your daylife. You "
+"can create todo lists, periodic tasks and more!"
+msgstr ""
+"TaskManager es una aplicación web simple que te ayuda a organizar tu dia a "
+"dia. puedescrear listas de cosas pendientes, tareas periodicas y mas!"
