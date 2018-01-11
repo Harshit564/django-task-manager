@@ -1,2 +1,26 @@
 {% extends "base.html" %}
-{% block head_title %}Task Manager - Home{% endblock %}
+{% load i18n %}
+{% load l10n %}
+{% load tz %}
+
+{% block pg_title %}Task Manager - Home{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row justify-content-end">
+        <div class="col-6 col-md-4 text-center">
+            <h4 class="lead">{{today}}</h4>
+        </div>
+    </div>
+</div>
+
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4 text-center">{% trans 'Welcome to TaskManager' %}</h1>
+        <hr>
+        <p class="lead"></p>{% blocktrans %}TaskManager is a simple web app that helps you organize your daylife. You can create todo lists, periodic tasks and more!{% endblocktrans %}</p>
+    </div>
+</div>
+<div class="container">
+</div>
+{% endblock content %}
