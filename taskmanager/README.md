@@ -59,7 +59,7 @@ the name in a few places:
 
 ### Virtual environments and Settings Files
 
-Create a Development virtual environment with Python 3 installed::
+Create a Development virtual environment with Python 3 installed:
 
     mkvirtualenv tm_dev
 
@@ -71,21 +71,21 @@ You must add the line:
 
 Secret Key:
 
-- Create secret.py file with **SECRET_KEY = 'your-django-secret-key'** inside
+- Create secret.py file with **SECRET_KEY = 'your-django-secret-key'** inside your settings directory
 
 with your project name and your own secret key.
 
-Next, install the packages in each environment::
+Next, install the packages in each environment:
 
     pip install -r requirements.txt
 
-Next, apply the basic migrations::
+Next, apply the basic migrations:
 
     python manage.py migrate
 
     python manage.py makemigrations
 
-And check that everything works by starting the server::
+And check that everything works by starting the server:
 
     python manage.py runserver
 
@@ -97,7 +97,7 @@ The default language for this Project is **English**, and we use internatinaliza
 
 If you want to change the translation language, or include a new one, you just need to modify the **LANGUAGES** variable in the file *settings/base.py*. The language codes that define each language can be found <http://msdn.microsoft.com/en-us/library/ms533052(v=vs.85).aspx>
 
-For example, if you want to use German you should include::
+For example, if you want to use German you should include:
 
     LANGUAGES = (
         ...
@@ -105,7 +105,7 @@ For example, if you want to use German you should include::
         ...
     )
 
-You can also specify a dialect, like Luxembourg's German with::
+You can also specify a dialect, like Luxembourg's German with:
 
     LANGUAGES = (
         ...
@@ -119,18 +119,18 @@ More information in <https://docs.djangoproject.com/en/2.0/topics/i18n/>
 
 ### Translation
 
-Go to the terminal, inside the taskmanager_project folder and create the files to translate with::
+Go to the terminal, inside the taskmanager_project folder and create the files to translate with:
 
     python manage.py makemessages -l ca
 
 change the language "ca" for your selected language.
 
-Next, go to the locale folder of your language::
+Next, go to the locale folder of your language:
 
     cd taskmanager/locale/ca/LC_MESSAGES
 
 where taskmanager is your project folder. You have to edit the file *django.po* and translate the strings. You can find more information about how to translate the strings <https://docs.djangoproject.com/en/2.0/topics/i18n/translation/#localization-how-to-create-language-files>
 
-Once the translation is done, compile your messages with::
+Once the translation is done, compile your messages with:
 
     python manage.py compilemessages -l ca
