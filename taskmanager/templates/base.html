@@ -23,7 +23,9 @@
         {% include 'navbar.html' %}
         {% endblock navbar %}
 
-        <h1 class="display-3">Task Manager</h1>
+        {% block content %}
+        {% endblock content %}
+
 
         
         <script src="{% static 'js/vendor/modernizr-3.5.0.min.js' %}"></script>
