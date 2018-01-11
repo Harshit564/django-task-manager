@@ -7,7 +7,7 @@ def home(request):
     Render index.html
     """
     now = timezone.now()
-    return render(request, "taskmanager/index.html", {'today': today, 'now': now})
+    return render(request, "taskmanager/index.html", {'now': now})
 
 def home_files(request, file):
     """
