@@ -52,6 +52,9 @@ coverage.xml
 # Django conf:
 settings/secret.py
 
+# Application fixtures
+taskmanager/fixtures
+
 # Flask stuff:
 instance/
 .webassets-cache
