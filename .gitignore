@@ -50,7 +50,7 @@ coverage.xml
 *.log
 
 # Django conf:
-settings/secret.py
+taskmanager/settings/secret.py
 
 # Application fixtures
 taskmanager/fixtures
