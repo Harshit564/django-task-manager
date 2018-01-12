@@ -34,11 +34,11 @@
                     {% trans 'Search' %}
                 </button>
             </form>
-
+            {% if request.user.is_authenticated %}
             <div class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
                     aria-expanded="false">
-                    {% trans 'User' %}
+                    {{user}}
                 </a>
                 <div class="dropdown-menu" aria-labelledby="userDropdown">
                     <a class="dropdown-item" href="#">{% trans 'Configuration' %}</a>
@@ -47,6 +47,14 @@
                     <a class="dropdown-item" href="#">{% trans 'Log Out' %}</a>
                 </div>
             </div>
+            {% else %}
+
+            <!-- Button trigger modal -->
+            <a href="accounts/login" class="btn btn-primary mx-2">
+            {% trans 'Log-in' %}
+            </a>
+
+            {% endif %}
 
         </div>
     </div>
