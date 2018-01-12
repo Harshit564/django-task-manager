@@ -1,6 +1,6 @@
 {% load staticfiles %}
 <!DOCTYPE html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -8,7 +8,9 @@
         <meta name="description" content="Task Manager will help you to orginize all your tasks!">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        {# Bootstrap4 CDN #}
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+        {# Custom Css Local #}
         <link rel="stylesheet" href="{% static 'css/main.css' %}">
         {% block extra_css %}{% endblock %}
     </head>
@@ -16,9 +18,8 @@
         <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
-
-        {% comment %} Nav Bar {% endcomment %}
         
+                
         {% block navbar %}
         {% include 'navbar.html' %}
         {% endblock navbar %}
@@ -27,14 +28,20 @@
         {% endblock content %}
 
 
-        
+        {# Modernizr #}
         <script src="{% static 'js/vendor/modernizr-3.5.0.min.js' %}"></script>
+        {# JQuery CDN #}
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        {# JQuery Local #}
         <script>window.jQuery || document.write('<script src="static/js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+        {# PopperJS CDN #}
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        {# Bootstrap4 CDN #}
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
 
+        {# Plugins Local #}
         <script src="{% static 'js/plugins.js' %}"></script>
+        {# Custom JS Local #}
         <script src="{% static 'js/main.js' %}"></script>
         {% block extra_javascript %}{% endblock %}
     </body>
