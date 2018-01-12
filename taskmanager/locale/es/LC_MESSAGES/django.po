@@ -1,25 +1,25 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# TaskManager spanish .po file.
+# Copyright (C) YEAR THE TaskManager'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the TaskManager package.
+# FIRST AUTHOR jm1218@hotmail.com, 2018.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: 0.1.0\n"
+"Project-Id-Version: 0.1.0 \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-11 14:53-0500\n"
-"PO-Revision-Date: 2018-01-11 15:00-0500\n"
-"Last-Translator: Jorge Andres Bravo Meza <jm1218@hotmail.com>\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2018-01-12 14:54-0500 \n"
+"PO-Revision-Date: 2018-01-12 15:00-0500 \n"
+"Last-Translator: Jorge Andres Bravo Meza jm1218@hotmail.com \n"
+"MIME-Version: 1.0 \n"
+"Content-Type: text/plain; charset=UTF-8 \n"
+"Content-Transfer-Encoding: 8bit \n"
 
-#: .\taskmanager\settings\base.py:110
+#: .\taskmanager\settings\base.py:146
 msgid "Spanish"
 msgstr "Español"
 
-#: .\taskmanager\settings\base.py:111
+#: .\taskmanager\settings\base.py:147
 msgid "English"
 msgstr "Inglés"
 
@@ -28,16 +28,12 @@ msgid "Home"
 msgstr "Inicio"
 
 #: .\taskmanager\templates\navbar.html:21
-msgid "Task"
+msgid "Tasks"
 msgstr "Tareas"
 
 #: .\taskmanager\templates\navbar.html:34
 msgid "Search"
 msgstr "Buscar"
-
-#: .\taskmanager\templates\navbar.html:41
-msgid "User"
-msgstr "Usuario"
 
 #: .\taskmanager\templates\navbar.html:44
 msgid "Configuration"
@@ -51,11 +47,15 @@ msgstr "Ayuda"
 msgid "Log Out"
 msgstr "Cerrar sesión"
 
-#: .\taskmanager\templates\taskmanager\index.html:12
+#: .\taskmanager\templates\navbar.html:54
+msgid "Log-in"
+msgstr "Iniciar sesión"
+
+#: .\taskmanager\templates\taskmanager\index.html:19
 msgid "Welcome to TaskManager"
 msgstr "Bienvenido a TaskManager"
 
-#: .\taskmanager\templates\taskmanager\index.html:14
+#: .\taskmanager\templates\taskmanager\index.html:21
 msgid ""
 "TaskManager is a simple web app that helps you organize your daylife. You "
 "can create todo lists, periodic tasks and more!"
